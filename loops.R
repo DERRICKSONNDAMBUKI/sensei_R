@@ -15,3 +15,9 @@ while (cnt<7){
     print(v)
     cnt=cnt+1
 }
+
+# for in loop
+l<-LETTERS[1:4]
+for (i in l) {
+   print(i)
+}
