@@ -17,6 +17,6 @@ labels<-c("Nairobi","Nakuru","Kisumu","Mombasa")
 # give the chart file a name
 png(file="./files/city.jpg")
 
-pie(x,labels)
+pie(x,labels,main = "City pie cahrt",col = rainbow(length(x)))
 # save the file
 dev.off()
