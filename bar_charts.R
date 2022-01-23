@@ -10,12 +10,13 @@
 
 # create the data for the chart
 H<-c(7,12,28,3,41)
+M <-c("Mar","Apr","May","Jun","Jul")
 
 # give the chart file name
 png(file = "./files/barchart.png")
 
 # plot the chart
-barplot(H)
+barplot(H,names.arg=M,xlab="Month",ylab="Revenue",col ="royalblue",main="Revenue Bar Chart",border = "red")
 
 # save the file
 dev.off()
