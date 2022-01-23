@@ -20,3 +20,7 @@ print(retval)
 # get persons in IT department and salry is greater than 600
 info <- subset(data, salary > 600 & dept == "IT")
 print(info)
+
+# people  joined on or after 2014
+retval <- subset(data, as.Date(start_date) > as.Date("2014-01-01"))
+print(retval)
