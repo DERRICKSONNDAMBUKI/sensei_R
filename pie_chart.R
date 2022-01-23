@@ -12,7 +12,7 @@
 
 # create data for the graph
 x<-c(21,62,10,53)
-labels<-c("London","New York","Singapore","Mumbai")
+labels<-c("Nairobi","Nakuru","Kisumu","Mombasa")
 
 # give the chart file a name
 png(file="./files/city.jpg")
