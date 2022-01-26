@@ -12,7 +12,10 @@
 v <- c(7,12,28,3,41)
 
 # Give the chart file a name.
-png(file = "line_chart.jpg")
+png(file = "./files/line_chart.jpg")
 
 # plot the chart
-plot(v, type = "o")
+plot(v, type = "o",col = "red",xlab = "Month",ylab = "Rain Fall",main ="Rain Fall Chart")
+
+
+dev.off()
