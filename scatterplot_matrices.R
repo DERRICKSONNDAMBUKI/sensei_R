@@ -10,7 +10,7 @@
 input <- mtcars[,c('wt','mpg')]
 
 # Give the chart file a name.
-png(file = "scatterplot_matrices.png")
+png(file = "./files/scatterplot_matrices.png")
 
 # Plot the matrices between 4 variables giving 12 plots.
 
