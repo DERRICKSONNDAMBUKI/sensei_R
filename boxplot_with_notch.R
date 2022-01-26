@@ -18,4 +18,4 @@ boxplot(
 )
 
 # save the file
-dev.off
+dev.off()
