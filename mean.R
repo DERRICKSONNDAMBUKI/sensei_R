@@ -9,5 +9,9 @@
 x <- c(12,7,3,4.2,18,2,54,-21,8,-5)
 
 # Find Mean.
-result.mean <- mean(x,trim = 0.3)
+result.mean <- mean(x,trim = 0.3) # using trim
+print(result.mean)
+
+# find mean dropping NA values
+result<-mean(x,na,rm=TRUE)
 print(result.mean)
