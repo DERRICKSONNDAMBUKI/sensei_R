@@ -1,3 +1,4 @@
+# It is calculated by taking the sum of the values and dividing with the number of values in a data series.
 # mean(x, trim = 0, na.rm = FALSE, ...)
 
 # Following is the description of the parameters used −
