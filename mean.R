@@ -7,12 +7,14 @@
     # na.rm is used to remove the missing values from the input vector.
 
 # Create a vector. 
-x <- c(12,7,3,4.2,18,2,54,-21,8,-5)
+# x <- c(12,7,3,4.2,18,2,54,-21,8,-5)
+x <- c(12,7,3,4.2,18,2,54,-21,8,-5,NA)
+
 
 # Find Mean.
 result.mean <- mean(x,trim = 0.3) # using trim
 print(result.mean)
 
 # find mean dropping NA values
-result<-mean(x,na,rm=TRUE)
+result.mean<-mean(x,na.rm=TRUE)
 print(result.mean)
