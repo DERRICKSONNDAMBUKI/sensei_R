@@ -12,4 +12,4 @@ relation<-lm(y~x)
 
 print(relation)
 # get the summary of the relationship 
-# print(summary(relation))
+print(summary(relation))
