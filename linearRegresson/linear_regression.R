@@ -12,4 +12,20 @@ relation<-lm(y~x)
 
 print(relation)
 # get the summary of the relationship 
-print(summary(relation))
+# print(summary(relation))
+
+# predict the weight of new person
+
+# predict(object, newdata)
+# Following is the description of the parameters used −
+    # object is the formula which is already created using the lm() function.
+    # newdata is the vector containing the new value for predictor variable.
+
+# find the weight of a person with height 170
+a<-data.frame(x=170)
+result <- predict(relation,a)
+print('wight of person with 170 height:')
+print(result)
+
+
+
