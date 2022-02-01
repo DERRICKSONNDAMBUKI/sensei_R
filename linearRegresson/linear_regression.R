@@ -24,12 +24,12 @@ print(relation)
 # find the weight of a person with height 170
 a<-data.frame(x=170)
 result <- predict(relation,a)
-print('wight of person with 170 height:')
-print(result)
-(file = "file/linear_regression.png")
+# print('wight of person with 170 height:')
+# print(result)
+png(file = "file/linear_regression.png")
 
 # plot the chart
-plot(y,x,col = "blue",main = "Height & Weight Regression", abline(lm((x~y)),cex = 1.3,pch = 16,xlab = "Weight in kg",ylab = "Height in cm"))
+plot(y,x,col = "blue",main = "Height & Weight Regression", abline(lm(x~y)),cex = 1.3,pch = 16,xlab = "Weight in kg",ylab = "Height in cm")
 
 # save the file
 dev.off()
