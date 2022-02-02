@@ -16,3 +16,17 @@ model<-lm(mpg~disp+hp+wt,data = input)
 
 # show the model
 print(model)
+
+# get the intercept and coefficients as vector elements.
+cat("# # # # The Coefficiens Values # # # #","\n")
+
+a<-coef(model)[1]
+print(a)
+
+xdisp<- coef(model)[2]
+xhp <- coef(model)[3]
+xwt <- coef(model)[4]
+
+print(xdisp)
+print(xhp)
+print(xwt)
