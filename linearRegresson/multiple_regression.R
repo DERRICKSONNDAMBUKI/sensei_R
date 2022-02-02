@@ -18,7 +18,7 @@ model<-lm(mpg~disp+hp+wt,data = input)
 print(model)
 
 # get the intercept and coefficients as vector elements.
-cat("# # # # The Coefficiens Values # # # #","\n")
+cat("# # # # The Coefficients Values # # # #","\n")
 
 a<-coef(model)[1]
 print(a)
@@ -30,3 +30,12 @@ xwt <- coef(model)[4]
 print(xdisp)
 print(xhp)
 print(xwt)
+
+# create eq for regression model
+# y = a+xdisp.x1+xhp.x2+xwt.x3
+# print(y)
+
+# Based on the above intercept and coefficient values, we create the mathematical equation.
+# Y = a+Xdisp.x1+Xhp.x2+Xwt.x3
+# or
+# Y = 37.15+(-0.000937)*x1+(-0.0311)*x2+(-3.8008)*x3
