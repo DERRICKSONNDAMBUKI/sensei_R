@@ -10,4 +10,9 @@
 # The goal of the model is to establish the relationship between "mpg" as a response variable with "disp","hp" and "wt" as predictor variables. We create a subset of these variables from the mtcars data set for this purpose.
 
 input <- mtcars[,c("mpg","disp","hp","wt")]
-print(head(input))
+# print(head(input))
+# create the relationship model
+model<-lm(mpg~disp+hp+wt,data = input)
+
+# show the model
+print(model)
