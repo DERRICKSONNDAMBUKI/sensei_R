@@ -10,4 +10,10 @@
 
 # select some columns form mtcars.
 input <- mtcars[,c("am","cyl","hp","wt")]
-print(head(input))
+# print(head(input))
+
+# create a regression model
+am.data = glm(formula = am ~ cyl + hp + wt, data = input, family = binomial)
+print(summary(am.data))
+
+# In the summary as the p-value in the last column is more than 0.05 for the variables "cyl" and "hp", we consider them to be insignificant in contributing to the value of the variable "am". Only weight (wt) impacts the "am" value in this regression model.
