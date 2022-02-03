@@ -21,6 +21,7 @@ y<- dnorm(x,mean = 2.5,sd = 0.5)
 
 # give the chart file a name
 png(file = "file/dnorm.png")
+
 plot(x,y)
 
 # save the file
