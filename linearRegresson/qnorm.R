@@ -9,7 +9,7 @@ x <- seq(0, 1, by = 0.02)
 y <- qnorm(x, mean = 2, sd = 1)
 
 # Give the chart file a name.
-png(file = "qnorm.png")
+png(file = "file/qnorm.png")
 
 # Plot the graph.
 plot(x,y)
